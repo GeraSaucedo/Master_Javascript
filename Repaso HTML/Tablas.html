@@ -1,0 +1,58 @@
+<!-- 
+    las tablas sirven para dibujar en la pantalla una tabla de contenido en la cual se tienen
+    filas y columnas. para poner una tabla se utiliza la etiqueta:
+        - <table>
+            dentro de la etiqueta tabla se utilizan las etiquetas
+            - <tr>: para representar una fila
+            - <td>: para representar una columna
+                    esta etiqueta tiene atributos como:
+                        - colspan:  sirve para expandir la columna 
+            - <th>: permite poner en negritas el item dentro de la etiqueta
+            
+            y tambien una tabla tiene diferentes atributos:
+            - border:   sirve para ver los bordes de la tabla
+            
+-->
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>  
+   <title>Mi primera web</title> 
+   <meta charset="UTF-8"> 
+</head>
+<body> 
+    <h1>Tablas en HTML!</h1>
+    <h2>Bienvenidos a mi web</h2>
+    <h3>Tablas</h3>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Sequi pariatur magni laudantium nulla culpa excepturi porro corrupti 
+        quibusdam ea, harum autem quas quod cum rerum quos officia, reiciendis quo dolor.
+    </p>
+    <table border="1">
+       <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Pais</th>
+       </tr>
+       <tr>
+            <td>Gerardo</td>
+            <td>Saucedo</td>
+            <td>Mexico</td>
+       </tr>
+       <tr>
+            <td>Jerry</td>
+            <td colspan="2">Saucedo</td>
+           
+       </tr>
+    </table>
+    
+    <h3>Subtitulo 2</h3>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Sequi pariatur magni laudantium nulla culpa excepturi porro corrupti 
+        quibusdam ea, harum autem quas quod cum rerum quos officia, reiciendis quo dolor.
+    </p>
+    <img src="web/Imagenes/perro.jpg" alt="Imagen de un perro" title="Foto de perro" width="255px" height="355px">
+    
+</body>
+</html>

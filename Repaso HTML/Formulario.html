@@ -1,0 +1,55 @@
+<!--
+    Un formulario sirve para ingresar informacion a la pagina web  
+    para hacer un formulario se utiliza la etiqueta:
+        - <form>
+
+            y tiene atributos como:
+            - action:   indica a donde enviara la informacion el formulario
+            - method:   para indicarle que metodo http utilizara
+    dentro de los formularios se utilizan etiquetas como
+    - <input> Permite ingresar texto (No se cierra esta etiqueta) 
+                atributos:
+                    - type:     tipo de texto que ingresara, puede ser text, password, etc.
+                    - name:     define el nombre de ese input 
+                    - placeholder:  Texto que aparece por defualt en el input
+    - <label> Muestra texto
+                atributos:
+                    - for:      indica a que campo corresponde esa etiqueta
+    - <textarea>:   permite poner un cuadro de texto mas grande que el input
+    - <select>:     permite definir un combobox por el cual se le ingresaran las opciones 
+                    con la etiqueta <option>
+-->
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <h2>FORMULARIO</h2>
+    <form>
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                   
+        </p>
+        <p>
+            <label for="descripcion">descripcion</label>
+            <textarea name="descripcion"></textarea>
+        </p>
+        <p>
+            <input type="radio" name="genero" value="hombre"> Hombre <br/>
+            <input type="radio" name="genero" value="mujer"> Mujer <br/>
+            <input type="radio" name="genero" value="nada"> nada <br/>
+            
+            <select>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="nada">Nada</option>
+            </select>
+            
+            <input type="submit" value="Enviar formulario">
+        </p>
+    </form>
+ </body>
+</html>
